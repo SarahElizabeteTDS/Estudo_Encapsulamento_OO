@@ -104,3 +104,7 @@ $liq->inverter();
 $liq->desligar();
 
 print "A cor do liquidificador é: " . $liq->getCor() . "\n";
+
+$liq->setMarca("Britania");
+
+print_r($liq);
