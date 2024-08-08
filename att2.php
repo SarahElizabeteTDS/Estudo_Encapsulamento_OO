@@ -55,19 +55,13 @@ class Aluno
 //programa principal
 
 $aluno0 = new Aluno();
-$aluno0->setNome("Felipe");
-$aluno0->setNota1(7);
-$aluno0->setNota2(10);
+$aluno0->setNome("Felipe")->setNota1(7)->setNota2(10);
 
 $aluno1 = new Aluno();
-$aluno1->setNome("Sarah");
-$aluno1->setNota1(10);
-$aluno1->setNota2(10);
+$aluno1->setNome("Sarah")->setNota1(10)->setNota2(10);
 
 $aluno2 = new Aluno();
-$aluno2->setNome("Walmonn");
-$aluno2->setNota1(2);
-$aluno2->setNota2(5);
+$aluno2->setNome("Walmonn")->setNota1(2)->setNota2(5);
 
 print $aluno0->getNome() . " é média:" . $aluno0->calcularMedia($aluno0->getNota1(), $aluno0->getNota2()) . "\n\n";
 print $aluno1->getNome() . " é média:" . $aluno1->calcularMedia($aluno1->getNota1(), $aluno1->getNota2()) . "\n\n";
