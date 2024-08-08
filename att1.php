@@ -81,18 +81,10 @@ class Pessoas
 //programa principal
 
 $pessoa0 = new Pessoas();
-$pessoa0->setNome("Felipe");
-$pessoa0->setEndereco("Rua 12");
-$pessoa0->setCidade("Santa Terezinha de Itaipu");
-$pessoa0->setUF("Paraná");
-$pessoa0->setAltura(1.88);
+$pessoa0->setNome("Felipe")->setEndereco("Rua 12")->setCidade("Santa Terezinha de Itaipu")->setUF("Paraná")->setAltura(1.88);
 
 $pessoa1 = new Pessoas();
-$pessoa1->setNome("Sarah");
-$pessoa1->setEndereco("Rua 22");
-$pessoa1->setCidade("Santa Terezinha de Itaipu");
-$pessoa1->setUF("Paraná");
-$pessoa1->setAltura(1.72);
+$pessoa1->setNome("Sarah")->setEndereco("Rua 22")->setCidade("Santa Terezinha de Itaipu")->setUF("Paraná")->setAltura(1.72);
 
 print $pessoa0->getApresentacao();
 print $pessoa1->getApresentacao();
