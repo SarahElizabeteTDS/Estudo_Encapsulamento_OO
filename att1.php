@@ -12,7 +12,7 @@ class Pessoas
     //metodos
     public function getApresentacao()
     {
-        print "Olá Mundo, sou " . $this->nome . ", resido no endereço " . $this->endereco . ", " . $this->cidade . "-" . $this->UF . " e possuo uma altura de " . $this->altura . "m!\n\n";
+        return "Olá Mundo, sou " . $this->nome . ", resido no endereço " . $this->endereco . ", " . $this->cidade . "-" . $this->UF . " e possuo uma altura de " . $this->altura . "m!\n\n";
     }
 
     //GETs and SETs
@@ -94,5 +94,5 @@ $pessoa1->setCidade("Santa Terezinha de Itaipu");
 $pessoa1->setUF("Paraná");
 $pessoa1->setAltura(1.72);
 
-$pessoa0->getApresentacao();
-$pessoa1->getApresentacao();
+print $pessoa0->getApresentacao();
+print $pessoa1->getApresentacao();
