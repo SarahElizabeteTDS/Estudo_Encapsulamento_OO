@@ -6,7 +6,7 @@ class Livros
     private $titulo;
     private $autor;
     private $genero;
-    private $numPaginas;
+    private int $numPaginas;
 
     //metodos
     public function getDados()
@@ -83,18 +83,18 @@ function compararLivros($livro1,$livro2,$livro3)
 }
 
 $livro1 = new Livros();
-$livro1->setTitulo("Capitães de Areia")->getAutor("Jorge Amado")->getGenero("Literatura Brasileira")->getNumPaginas(283);
+$livro1->setTitulo("Capitães de Areia")->setAutor("Jorge Amado")->setGenero("Literatura Brasileira")->setNumPaginas(283);
 
 $livro2 = new Livros();
-$livro2->setTitulo("O Alquimista")->getAutor("Paulo Coelho")->getGenero("Literatura Brasileira")->getNumPaginas(248);
+$livro2->setTitulo("O Alquimista")->setAutor("Paulo Coelho")->setGenero("Literatura Brasileira")->setNumPaginas(248);
 
 $livro3 = new Livros();
-$livro3->setTitulo("O Avesso da Pele")->getAutor("Jeferson Tenório")->getGenero("Literatura Brasileira")->getNumPaginas(181);
+$livro3->setTitulo("O Avesso da Pele")->setAutor("Jeferson Tenório")->setGenero("Literatura Brasileira")->setNumPaginas(181);
 
-if (compararLivros($livro1, $livro2, $livro3) == $livro1) 
+if (compararLivros($livro1->getNumPaginas(), $livro2->getNumPaginas(), $livro3->getNumPaginas()) == $livro1->getNumPaginas()) 
 {
     print $livro1->getDados();
-}else if(compararLivros($livro1, $livro2, $livro3) == $livro2){
+}else if(compararLivros($livro1->getNumPaginas(), $livro2->getNumPaginas(), $livro3->getNumPaginas()) == $livro2->getNumPaginas()){
     print $livro2->getDados();
 }else{
     print $livro3->getDados();
